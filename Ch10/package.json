@@ -1,0 +1,56 @@
+{
+  "name": "realworld-starter-kit",
+  "version": "1.0.0",
+  "description": "> ### AppRun codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.",
+  "main": "index.js",
+  "scripts": {
+    "jest": "jest",
+    "test": "jest --watch",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack -p --mode production",
+    "lint": "tslint -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yysun/realworld-starter-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yysun/realworld-starter-kit/issues"
+  },
+  "homepage": "https://github.com/yysun/realworld-starter-kit#readme",
+  "devDependencies": {
+    "@types/jest": "^23.1.5",
+    "jest": "^23.3.0",
+    "source-map-loader": "^0.2.3",
+    "ts-jest": "^22.4.6",
+    "ts-loader": "^4.4.2",
+    "tslib": "^1.9.3",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "apprun": "^3.1.0",
+    "marked": "^0.3.19"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
